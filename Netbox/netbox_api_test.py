@@ -37,10 +37,6 @@ netbox = NetBox(host='192.168.1.154', port='', use_ssl=True,
 # white	=	'ffffff'
 # yellow	=	'ffeb3b'
 
-
-
-
-
 # netbox.dcim.create_site('Test Site','testsite')
 netbox.dcim.create_device_role('test',red,'test')
 # netbox.dcim.create_device('test','wlc','Test','wlc')
