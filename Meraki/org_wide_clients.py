@@ -8,10 +8,12 @@ import meraki
 # or set an environment variable (preferred) to define your API key. The former is insecure and not recommended.
 # For example, in Linux/macOS:  export API_KEY='20934890jasdjfadf0jp2ruoajdf;lasdjf-adsj'
 
+api = os.getenv("meraki")
+
 def main():
     # Instantiate a Meraki dashboard API session
     dashboard = meraki.DashboardAPI(
-        api_key='',
+        api_key=api,
         base_url='https://api-mp.meraki.com/api/v1/',
         output_log=True,
         log_file_prefix=os.path.basename(__file__)[:-3],
